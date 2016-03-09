@@ -1,0 +1,16 @@
+.myButton {
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    font-size: 16px;
+    background-color: red;
+    color: white;
+    display: inlilne;
+    margin: auto;
+}
+
+#coloredBox {
+    height: 100px;
+    width: 150px;
+    background-color: blue;
+}

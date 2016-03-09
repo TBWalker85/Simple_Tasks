@@ -5,7 +5,7 @@
     font-size: 16px;
     background-color: red;
     color: white;
-    display: block;
+    display: inlilne;
     margin: auto;
 }
 
@@ -13,10 +13,4 @@
     height: 100px;
     width: 150px;
     background-color: blue;
-    margin: 3px;
-    float: left;
-    color: white;
-    text-align: center;
-    font-size: 30px;
-    padding-top: 50px;
 }

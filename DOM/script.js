@@ -28,14 +28,23 @@ document.addEventListener('DOMContentLoaded', function() {
     paragraph.onclick = clickParagraph;
     document.body.appendChild(paragraph);
     //5.
-    var newDiv = document.createElement('div');
     var buttonThree = document.createElement('button');
     var textThree = document.createTextNode('Name Button');
     buttonThree.appendChild(textThree);
     buttonThree.onclick = myName;
     document.body.appendChild(buttonThree);
-    document.body.appendChild(newDiv);
     buttonThree.className = 'myButton';
+    //6.
+    var friendList = document.getElementById("friends");
+    friendList.addEventListener("click", function(){
+    var num1 = document.getElementById("list");
+    var friends = ["Thomas", "Nick", "Mary", "Melissa", "Jane", "Jerry", "Joe", "Andrew", "Chris", "Brian"];
+    for(var i = 0; i < friends.length; i++){
+       var num2 = document.createElement("li");
+    num2.appendChild(document.createTextNode(friends[i]));
+    num1.appendChild(num2);    
+    };
+    })
 });
 
 function clickButton () {
@@ -87,7 +96,22 @@ function clickParagraph(e){
     
 //5.
 function myName (){
-    var name = String('Thomas Walker');
+    var span = document.createElement('span');
     var newDiv = document.createElement('div');
-    newDiv.appendChild(name);
+    var name = document.createTextNode('Thomas Walker');
+    span.appendChild(name);
+    newDiv.appendChild(span);
+    document.body.appendChild(newDiv);
 }    
+
+//6.
+// var friendList = document.getElementById("friends");
+//     friendList.addEventListener("click", function(){
+//     var num1 = document.getElementById("list");
+//     var friends = ["Thomas", "Nick", "Mary", "Melissa", "Jane", "Jerry", "Joe", "Andrew", "Chris", "Brian"];
+//     for(var i = 0; i < friends.length; i++){
+//        var num2 = document.createElement("li");
+//     num2.appendChild(document.createTextNode(friends[i]));
+//     num1.appendChild(num2);    
+//    };
+// })
